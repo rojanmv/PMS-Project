@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+
+            display: flex;
+            justify-content: center;   /* Horizontal center */
+            align-items: center;       /* Vertical center */
+        }
+
+        .dashboard-box {
+            background: white;
+            padding: 30px 40px;
+            border-radius: 12px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .dashboard-box h2 {
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background: #45a049;
+        }
+
+        .logout-btn {
+            background: #d9534f;
+        }
+
+        .logout-btn:hover {
+            background: #c9302c;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="dashboard-box">
+    <h2>Dashboard</h2>
+
+    <a class="btn" href="/employees">Manage Employees</a>
+    <a class="btn" href="/attendance">Manage Attendance</a>
+    <a class="btn" href="/payroll">Payroll</a>
+    <a class="btn logout-btn" href="/logout">Logout</a>
+</div>
+
+</body>
+</html>
